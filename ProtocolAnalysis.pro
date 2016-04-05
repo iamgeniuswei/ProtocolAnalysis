@@ -2,4 +2,8 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     MainApp \
-    DesignPattern
+    DesignPattern \
+    MessageQueue \
+    MainAppB \
+    MainAppGUIA \
+    ZMQMainApp

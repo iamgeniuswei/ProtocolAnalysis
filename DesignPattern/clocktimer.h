@@ -1,7 +1,7 @@
 #ifndef CLOCKTIMER_H
 #define CLOCKTIMER_H
 
-
+#include "subject.h"
 class ClockTimer : public Subject
 {
 public:

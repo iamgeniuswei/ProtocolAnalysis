@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -18,3 +18,10 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../MessageQueue/release/ -lMessageQueue
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../MessageQueue/debug/ -lMessageQueue
+else:unix: LIBS += -L$$OUT_PWD/../MessageQueue/ -lMessageQueue
+
+INCLUDEPATH += $$PWD/../MessageQueue
+DEPENDPATH += $$PWD/../MessageQueue

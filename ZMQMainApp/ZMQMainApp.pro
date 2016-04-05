@@ -16,3 +16,6 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp
+
+INCLUDEPATH += F:\QtProject\libzmq\inc
+LIBS += F:\QtProject\libzmq\lib\libzmq-v120-mt-gd-4_0_4.lib

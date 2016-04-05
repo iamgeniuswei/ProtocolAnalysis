@@ -13,10 +13,14 @@ TEMPLATE = lib
 
 DEFINES += MESSAGEQUEUE_LIBRARY
 
-SOURCES += messagequeue.cpp
+SOURCES += messagequeue.cpp \
+    msgserver.cpp \
+    msgsender.cpp
 
 HEADERS += messagequeue.h\
-        messagequeue_global.h
+        messagequeue_global.h \
+    msgserver.h \
+    msgsender.h
 
 unix {
     target.path = /usr/lib

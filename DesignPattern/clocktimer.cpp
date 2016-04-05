@@ -5,3 +5,8 @@ ClockTimer::ClockTimer()
 
 }
 
+int ClockTimer::GetHour()
+{
+    return 0;
+}
+
