@@ -14,13 +14,17 @@ DEFINES += DESIGNPATTERN_LIBRARY
 SOURCES += designpattern.cpp \
     observer.cpp \
     subject.cpp \
-    clocktimer.cpp
+    clocktimer.cpp \
+    simplefactorypatterndemo.cpp \
+    observerpatterndemo.cpp
 
 HEADERS += designpattern.h\
         designpattern_global.h \
     observer.h \
     subject.h \
-    clocktimer.h
+    clocktimer.h \
+    simplefactorypatterndemo.h \
+    observerpatterndemo.h
 
 unix {
     target.path = /usr/lib

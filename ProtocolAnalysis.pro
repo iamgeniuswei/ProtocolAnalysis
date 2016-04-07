@@ -6,4 +6,5 @@ SUBDIRS += \
     MessageQueue \
     MainAppB \
     MainAppGUIA \
-    ZMQMainApp
+    ZMQMainApp \
+    MainAppDP
