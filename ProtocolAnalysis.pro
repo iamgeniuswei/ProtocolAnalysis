@@ -7,4 +7,5 @@ SUBDIRS += \
     MainAppB \
     MainAppGUIA \
     ZMQMainApp \
-    MainAppDP
+    MainAppDP \
+    ZMQClient
