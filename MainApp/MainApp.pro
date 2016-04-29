@@ -16,7 +16,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp \
-    qplogsender.cpp
+    qplogsender.cpp \
+    stack.cpp \
+    animal.cpp \
+    qojecttest.cpp \
+    testobject.cpp \
+    testobject2.cpp \
+    testobject3.cpp
 
 win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../MessageQueue/release/ -lMessageQueue
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../MessageQueue/debug/ -lMessageQueue
@@ -26,4 +32,10 @@ INCLUDEPATH += $$PWD/../MessageQueue
 DEPENDPATH += $$PWD/../MessageQueue
 
 HEADERS += \
-    qplogsender.h
+    qplogsender.h \
+    stack.h \
+    animal.h \
+    qojecttest.h \
+    testobject.h \
+    testobject2.h \
+    testobject3.h
